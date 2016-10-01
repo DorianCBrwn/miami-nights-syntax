@@ -105,17 +105,19 @@ atom-text-editor.is-focused,
 }
 .variable.language,
 .variable.other {
-    color: @base08;
-    text-shadow: 0 0 @blur rgba(58, 175, 255, @opacity);
+  color: @base0C;
+  text-shadow: 0 0 @blur rgba(73, 166, 210, @opacity);
 }
 .variable.parameter {
     color: @base0D;
     text-shadow: 0 0 @blur fadeout(rgba(5, 214, 249, @opacity),10);
 }
+/*
 .keyword {
     color: @base0B;
     text-shadow: 0 0 @blur rgba(34, 255, 169, @opacity);
 }
+*/
 .entity {
     &.name.type {
         color: @base05;
@@ -193,11 +195,13 @@ atom-text-editor.is-focused,
     color: @base0C;
     text-shadow: 0 0 @blur rgba(73, 166, 210, @opacity);
 }
+
 .markup.heading {
     font-weight: bold;
     color: @base0B;
     text-shadow: 0 0 @blur rgba(34, 255, 169, @opacity);
 }
+
 .markup.italic {
     font-style: italic;
     color: @base0E;
@@ -227,4 +231,22 @@ atom-text-editor.is-focused,
 .meta.tag.template {
         color: @base08;
         text-shadow: 0 0 @blur rgba(227, 228, 169, @opacity);
+}
+//Clojure
+.constant.keyword.clojure{
+  color: @base0C;
+  text-shadow: 0 0 @blur rgba(73, 166, 210, @opacity);
+}
+.storage.control.clojure{
+  color: @base0C;
+  text-shadow: 0 0 @blur rgba(73, 166, 210, @opacity);
+}
+.keyword.clojure{
+  color: @base0C;
+  text-shadow: 0 0 @blur rgba(73, 166, 210, @opacity);
+}
+
+//Java
+.comment.line.double-slash.java{
+  color: @syntax-text-color;
 }

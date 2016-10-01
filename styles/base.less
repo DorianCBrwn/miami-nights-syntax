@@ -67,6 +67,8 @@ atom-text-editor.is-focused,
         box-shadow: 0 0 5px 0 fade( @base0D, 60%);
     }
 }
+
+//Global syntax highlights
 .comment {
     color: lighten(@base02,15%);
 }
@@ -112,12 +114,12 @@ atom-text-editor.is-focused,
     color: @base0D;
     text-shadow: 0 0 @blur fadeout(rgba(5, 214, 249, @opacity),10);
 }
-/*
+
 .keyword {
     color: @base0B;
     text-shadow: 0 0 @blur rgba(34, 255, 169, @opacity);
 }
-*/
+
 .entity {
     &.name.type {
         color: @base05;
@@ -233,20 +235,100 @@ atom-text-editor.is-focused,
         text-shadow: 0 0 @blur rgba(227, 228, 169, @opacity);
 }
 //Clojure
+//Keywords
+.keyword.control.clojure{
+  color: @base0E;
+  text-shadow: 0 0 @blur rgba(170, 175, 219, @opacity);
+}
 .constant.keyword.clojure{
-  color: @base0C;
-  text-shadow: 0 0 @blur rgba(73, 166, 210, @opacity);
+  color: @base11;
+  text-shadow: 0 0 @blur rgba(5, 214, 249, 0.8);
 }
-.storage.control.clojure{
+//Functions
+.entity.name.function.clojure{
   color: @base0C;
-  text-shadow: 0 0 @blur rgba(73, 166, 210, @opacity);
+  text-shadow: 0 0 @blur rgba(0, 196, 214, @opacity);
 }
-.keyword.clojure{
-  color: @base0C;
-  text-shadow: 0 0 @blur rgba(73, 166, 210, @opacity);
+//Strings
+.string.quoted.double.clojure{
+  color: @base08;
+  text-shadow: 0 0 @blur rgba(139, 93, 223, @opacity);
 }
+.punctuation.definition.string.begin.clojure{
+  color: @base08;
+  text-shadow: 0 0 @blur rgba(187, 223, 221, @opacity);
+}
+.punctuation.definition.string.end.clojure{
+  color: @base08;
+  text-shadow: 0 0 @blur rgba(187, 223, 221, @opacity);
+}
+//numberic
+.constant.numeric.long.clojure{
+  color: @base0A;
+  text-shadow: 0 0 @blur rgba(34, 200, 153, @opacity);
+}
+//boolean
+.constant.language.boolean.clojure{
+  color: @base13;
+  text-shadow: 0 0 @blur rgba(182, 210, 227, @opacity);
+}
+//punctuation
+.punctuation.section.vector.begin.clojure{
+  color: saturate(@syntax-text-color, 60%);
+  text-shadow: 0 0 @blur rgba(151, 179, 237, @opacity);
+}
+.punctuation.section.vector.end.clojure{
+  color: saturate(@syntax-text-color, 60%);
+  text-shadow: 0 0 @blur rgba(151, 179, 237, @opacity);
+}
+.punctuation.section.vector.end.trailing.clojure{
+  color: saturate(@syntax-text-color, 60%);
+  text-shadow: 0 0 @blur rgba(151, 179, 237, @opacity);
+}
+.punctuation.section.expression.begin.clojure{
+  color: saturate(@syntax-text-color, 30%);
+  text-shadow: 0 0 @blur rgba(151, 179, 237, @opacity);
+}
+
+.punctuation.section.expression.end.clojure{
+  color: saturate(@syntax-text-color, 30%);
+  text-shadow: 0 0 @blur rgba(151, 179, 237, @opacity);
+}
+
+
+.punctuation.section.expression.end.trailing.clojure{
+  color: saturate(@syntax-text-color, 30%);
+  text-shadow: 0 0 @blur rgba(151, 179, 237, @opacity);
+}
+
+
 
 //Java
 .comment.line.double-slash.java{
   color: @syntax-text-color;
+}
+.punctuation.definition.comment.java{
+  color: @syntax-text-color;
+}
+
+//CSS
+.constant.numeric.css{
+  color: @base0A;
+  text-shadow: 0 0 @blur rgba(34, 200, 153, @opacity);
+}
+.keyword.other.unit.css{
+  color: @base12;
+  text-shadow: 0 0 @blur rgba(227, 227, 179, @opacity);
+}
+.keyword.other.important.css{
+  font-weight: bold;
+  color:lighten(@base0B, 10%);
+  text-shadow: 0 0 @blur rgba(34, 255, 169, @opacity);
+}
+
+
+//Swift
+.entity.name.type.class.swift {
+    color: @base07;
+    text-shadow: 0 0 @blur rgba(255, 51, 153, @opacity);
 }

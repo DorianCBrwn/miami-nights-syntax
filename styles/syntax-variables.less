@@ -5,14 +5,16 @@
 
 // General colors
 //------------------------------------------------------------------------------
-// @syntax-text-color:       @base05;
-// @syntax-cursor-color:     @base07;
-// @syntax-selection-color:  @base02;
-// @syntax-background-color: @base00;
+//Alternate Colors
+/*@syntax-text-color:      @base05;
+ @syntax-cursor-color:     @base07;
+ @syntax-selection-color:  @base02;
+ @syntax-background-color: @base00;
+*/
 
 @syntax-text-color:            @syntax-base-text-color;
 @syntax-cursor-color:          @syntax-base-accent-color;
-@syntax-selection-color:       lighten(@syntax-background-color, 10%);
+@syntax-selection-color:       lighten(@syntax-background-color, 20%);
 @syntax-selection-flash-color: @syntax-base-accent-color;
 @syntax-background-color:      @syntax-base-background-color;
 
@@ -25,7 +27,7 @@
 
 // For find and replace markers
 //------------------------------------------------------------------------------
-@syntax-result-marker-color:          @base04;
+@syntax-result-marker-color: @base08;
 @syntax-result-marker-color-selected: @base05;
 
 // Guide colors
@@ -34,24 +36,29 @@
 @syntax-invisible-character-color: @syntax-base-guide-color;
 
 // Gutter colors
-@syntax-gutter-text-color: darken(@syntax-text-color, 26%);
+@syntax-gutter-text-color: darken(@syntax-text-color, 30%);
 @syntax-gutter-text-color-selected: @syntax-text-color;
 @syntax-gutter-background-color: @syntax-background-color; // unused
-@syntax-gutter-background-color-selected: lighten(@syntax-background-color, 2%);
+@syntax-gutter-background-color-selected: lighten(@syntax-background-color, 20%);
 
-// @syntax-gutter-text-color:                  @base04;
-// @syntax-gutter-text-color-selected:         @syntax-gutter-text-color;
-// @syntax-gutter-background-color:            lighten(@base00, 2%);
-// @syntax-gutter-background-color-selected:   @base01;
-/*
+//Alternate Gutter
+ /*
+ @syntax-gutter-text-color:                  @base04;
+ @syntax-gutter-text-color-selected:         @syntax-gutter-text-color;
+ @syntax-gutter-background-color:            lighten(@base00, 2%);
+ @syntax-gutter-background-color-selected:   @base01;
+ */
+
+
+//Glow Settings
+@contrast: 200%;
+@opacity: 0.8;
+@blur: 10px;
+@saturation: 150%;
+
+/* Brighter glow
 @opacity: 0.8;
 @blur: 15px;
 @contrast: 200%;
 @saturation: 200%;
 */
-
-//Glow Settings
-@contrast: 200%;
-@opacity: 0.8;
-@blur: 8px;
-@saturation: 150%;

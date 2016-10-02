@@ -1,5 +1,14 @@
 # miami-nights-syntax theme
 
-A short description of your theme.
+Miami vice inspired theme based on by neon-syntax : https://atom.io/themes/neon-syntax and
+ steam-pirate-syntax: https://github.com/v3ss0n/steam-pirate-syntax.  
+ Colors were hand picked from the 1980's TV show Miami Vice"
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+
+## Supported languages
+  *Clojure
+  *CSS  
+
+  ___
+[Clojure Example!](assets/screenshot-clojure.png)  
+[CSS example!](assets/screenshot-css.png)

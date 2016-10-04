@@ -1,7 +1,7 @@
 {
   "name": "miami-nights-syntax",
   "theme": "syntax",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Miami vice inspired theme based on by neon-syntax : https://atom.io/themes/neon-syntax and steam-pirate-syntax: https://github.com/v3ss0n/steam-pirate-syntax. Colors were hand picked from the 1980's TV show Miami Vice",
   "repository": "https://github.com/DorianCBrwn/miami-nights-syntax",
   "license": "MIT",

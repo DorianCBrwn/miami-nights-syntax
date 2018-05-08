@@ -232,71 +232,73 @@ atom-text-editor.is-focused,atom-text-editor {
         color: @base08;
         text-shadow: 0 0 @blur rgba(227, 228, 169, @opacity);
 }
+
+
 //Clojure
 //Keywords
-.keyword.control.clojure{
+.syntax--keyword.syntax--control.syntax--clojure{
   color: @base0E;
   text-shadow: 0 0 @blur rgba(170, 175, 219, @opacity);
 }
-.constant.keyword.clojure{
+.syntax--constant.syntax--keyword.syntax--clojure{
   color: @base11;
   text-shadow: 0 0 @blur rgba(5, 214, 249, 0.8);
 }
 //Functions
-.entity.name.function.clojure{
+.syntax--entity.syntax--name.syntax--function.syntax--clojure{
   color: @base0C;
   text-shadow: 0 0 @blur rgba(0, 196, 214, @opacity);
 }
 //Strings
-.string.quoted.double.clojure{
+.syntax--string.syntax--quoted.syntax--double.syntax--clojure{
   color: @base08;
   text-shadow: 0 0 @blur rgba(139, 93, 223, @opacity);
 }
-.punctuation.definition.string.begin.clojure{
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--clojure{
   color: @base08;
   text-shadow: 0 0 @blur rgba(187, 223, 221, @opacity);
 }
-.punctuation.definition.string.end.clojure{
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--clojure{
   color: @base08;
   text-shadow: 0 0 @blur rgba(187, 223, 221, @opacity);
 }
 //numberic
-.constant.numeric.long.clojure{
+.syntax--constant.syntax--numeric.syntax--long.syntax--clojure{
   color: @base0A;
   text-shadow: 0 0 @blur rgba(34, 200, 153, @opacity);
 }
 //boolean
-.constant.language.boolean.clojure{
+.syntax--constant.syntax--language.syntax--boolean.syntax--clojure{
   color: @base13;
   text-shadow: 0 0 @blur rgba(182, 210, 227, @opacity);
 }
 //punctuation
-.punctuation.section.vector.begin.clojure{
+.syntax--punctuation.syntax--section.syntax--vector.syntax--begin.syntax--clojure{
   color: saturate(@syntax-text-color, 60%);
   text-shadow: 0 0 @blur rgba(151, 179, 237, @opacity);
 }
-.punctuation.section.vector.end.clojure{
+.syntax--punctuation.syntax--section.syntax--vector.syntax--end.syntax--clojure{
   color: saturate(@syntax-text-color, 60%);
   text-shadow: 0 0 @blur rgba(151, 179, 237, @opacity);
 }
-.punctuation.section.vector.end.trailing.clojure{
+.syntax--punctuation.syntax--section.syntax--vector.syntax--end.syntax--trailing.syntax--clojure{
   color: saturate(@syntax-text-color, 60%);
   text-shadow: 0 0 @blur rgba(151, 179, 237, @opacity);
 }
-.punctuation.section.expression.begin.clojure{
+.syntax--punctuation.syntax--section.syntax--expression.syntax--begin.syntax--clojure{
   color: saturate(@syntax-text-color, 30%);
   text-shadow: 0 0 @blur rgba(151, 179, 237, @opacity);
 }
 
-.punctuation.section.expression.end.clojure{
+.syntax--punctuation.syntax--section.syntax--expression.syntax--end.syntax--clojure{
   color: saturate(@syntax-text-color, 30%);
   text-shadow: 0 0 @blur rgba(151, 179, 237, @opacity);
 }
-.punctuation.section.expression.end.trailing.clojure{
+.syntax--punctuation.syntax--section.syntax--expression.syntax--end.syntax--trailing.syntax--clojure{
   color: saturate(@syntax-text-color, 30%);
   text-shadow: 0 0 @blur rgba(151, 179, 237, @opacity);
 }
-.storage.control.clojure{
+.syntax--storage.syntax--control.syntax--clojure{
   color: lighten(@base07, 50%);
   text-shadow: 0 0 @blur rgba(255, 255, 252, @opacity);
 }

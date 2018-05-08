@@ -1,7 +1,6 @@
 
 @import "syntax-variables";
-atom-text-editor,
-:host {
+atom-text-editor,atom-text-editor {
     background-color: @syntax-background-color;
     color: @syntax-text-color;
     text-rendering: optimizeSpeed;
@@ -53,8 +52,7 @@ atom-text-editor,
         color: @syntax-gutter-text-color-selected;
     }
 }
-atom-text-editor.is-focused,
-:host {
+atom-text-editor.is-focused,atom-text-editor {
     .cursor {
         border-color: @syntax-cursor-color;
         // box-shadow: 0px 0px 20px 3px  fade(lightblue,50%);
